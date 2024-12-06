@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa do Chef</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Estilo para o banner fixo no topo */
+        .top-banner {
+
+            background-image: linear-gradient(to right, #e7958d, #a74037);
+            /* Cor de fundo vermelha */
+            color: white;
+            /* Cor do texto branca */
+            padding: 20px 0;
+            /* Padding para deixar o banner mais alto */
+            text-align: start;
+            /* O texto esta sendo posicionado a esquerda */
+            font-size: 50px;
+            /* Tamanho grande para o nome do restaurante */
+            font-weight: bold;
+            /* Deixa o texto em negrito */
+            position: fixed;
+            /* Fixar o banner no topo */
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            transition: padding 0.3s, font-size 0.3s;
+            /* Garante que o banner fique acima de outros elementos */
+        }
+        .banner.shrink {
+            padding: 10px 0; /* Diminui o padding */
+        }
+
+        /* Adiciona um espaçamento abaixo do banner */
+        body {
+            background-color: #970d01;
+            padding-top: 100px;
+            
+            /* Ajusta o conteúdo da página para não ficar atrás do banner */
+        }
+
+        .top-banner {
+
+            color: #FFFF66;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- Banner fixo no topo -->
+    <div class="top-banner">
+        Mesa Do Chef
+    </div>
+
+   
+    <div class="container mt-5">
+        <h2 class="text-center">Cardápio</h2>
+
+        <div class="row">
+            <!-- Entradas -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Entradas</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="mb-4">
+                            <img src="img/imagem2.jfif" class="img-fluid" alt="prato1">
+                            <h5 class="mt-2">Caprese Salad Recipe (Insalata Caprese) - tomate</h5>
+                            <p>R$ 28,70</p>
+                        </div>
+                        <div>
+                            <img src="img/imagem4.jfif" class="img-fluid" alt="prato2">
+                            <h5 class="mt-2">Berinjela ao Forno</h5>
+                            <p>R$ 36,60</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pratos Principais -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Pratos Principais</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="mb-4">
+                            <img src="img/imagem3.jfif" class="img-fluid" alt="prato3">
+                            <h5 class="mt-2">Filé de pato glaceado com purê de batata</h5>
+                            <p>R$ 109,70</p>
+                        </div>
+                        <div>
+                            <img src="img/imagem7.jfif" class="img-fluid" alt="prato4">
+                            <h5 class="mt-2">Salmão ao molho de amêndoas e mel em cama de purê de abóbora</h5>
+                            <p>R$ 209,90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sobremesas -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Sobremesas</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="mb-4">
+                            <img src="img/imagem6.jfif" class="img-fluid" alt="prato5">
+                            <h5 class="mt-2">Torta Mousse 3 chocolates</h5>
+                            <p>R$ 55,80</p>
+                        </div>
+                        <div>
+                            <img src="img/imagem5.jfif" class="img-fluid" alt="prato6">
+                            <h5 class="mt-2">Mont-blanc</h5>
+                            <p>R$ 74,90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Bebidas</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="mb-4">
+                            <img src="img/vinho.jfif" class="img-fluid" alt="vinho">
+                            <h5 class="mt-2">Vinho Tinto Chateau Latour Pauillac 750ml</h5>
+                            <p>R$ 13.910,40</p>
+                        </div>
+                        <div>
+                            <img src="img/espumante.jfif" class="img-fluid" alt="espumante">
+                            <h5 class="mt-2">Champagne Armand de Brignac Brut Gold 750ml</h5>
+                            <p>R$ 3.199,90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+</body>
+
+</html>
